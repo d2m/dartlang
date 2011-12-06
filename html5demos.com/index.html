@@ -213,7 +213,7 @@
 
   $('#tags').append('<strong>Filter demos:</strong> ' + html.sort().join(''));
 
-  $.getJSON('http://html5demos.com/demos.json', function (data) {
+  $.getJSON('demos.json', function (data) {
     var i = data.length, $test;
     while (i--) {
       if (data[i].test && (new Function('return ' + data[i].test))()) {
