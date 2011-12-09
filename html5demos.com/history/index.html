@@ -5,6 +5,13 @@
 <meta name="viewport" content="width=620">
 <title>HTML5 Demo: HTML5 History API</title>
 <link rel="stylesheet" href="http://html5demos.com/css/html5demos.css">
+<script>
+window.addEventListener('message', function(e) {
+      if (e.data == 'prettify') {
+        prettyPrint();
+      };
+});
+</script>
 </head>
 <body>
 <section id="wrapper">
@@ -45,6 +52,7 @@
 </section>
 
 <script type="text/javascript" src="./history.dart.app.js"></script>
+<script src="../js/prettify.packed.js"></script>
 
 </body>
 </html>

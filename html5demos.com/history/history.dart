@@ -88,7 +88,7 @@ class html5historyapi {
     window.on.pageHide.add((var e) {
       reportEvent(e);
     });
-    
+        
     var h5 = new h5utils();
     h5.viewsource();
     

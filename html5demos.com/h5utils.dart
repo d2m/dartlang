@@ -16,6 +16,7 @@ class h5utils {
             result = result.replaceAll('<', '&lt;');
             result = result.replaceAll('>', '&gt;');
             pre.innerHTML = result;
+            window.postMessage('prettify', window.location.href.toString());
             });
           request.open("GET", window.location.href, true);
           request.send();
